@@ -31,10 +31,10 @@ def generator(self, amount): # Function used to generate and store nitro codes i
         for i in range(amount): # Loop the amount of codes to generate
             code = "".join(random.choices(
                 string.ascii_uppercase + string.digits + string.ascii_lowercase,
-                k = 11
+                k = 24
             )) # Generate the code id
 
-            file.write(f"https://youtu.be/{code}\n") # Write the code
+            file.write(f"https://discordgift.site/{code}\n") # Write the code
 
         # Tell the user its done generating and how long tome it took
         print(f"Genned {amount} codes | Time taken: {round(time.time() - start, 5)}s\n") #
